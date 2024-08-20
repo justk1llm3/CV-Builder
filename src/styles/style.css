@@ -1,0 +1,195 @@
+:root {
+    /* input section */
+    --input-background: #2C2C2E;
+    --input-text: #F2F2F7;
+    --input-border: #5AC8FA;
+    /* cv preview section */
+    --h2-main: #FFFFFF;
+    --h2-background: #3A3A3C;
+    --cv-background: #2B2B2D;
+    --normal-text: #D1D1D6;
+    --subtle-text: #8E8E93;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    height: 46cm;
+    width: 35cm;
+    margin-top: 16px;
+}
+
+.input-section {
+    width: 12cm;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 50px;
+    height: 100%;
+    background-color: var(--h2-background);
+}
+
+.input-section span {
+    padding: 8px;
+}
+
+.expendable,
+.project-input {
+    width: 12cm;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.cv-preview {
+    color: var(--normal-text);
+    width: 21cm;
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cv-background);
+}
+
+.cv-preview p {
+    padding: 8px;
+}
+
+.cv-preview h3,
+a {
+    padding: 8px;
+}
+
+a {
+    color: #007AFF;
+    /* Bright blue */
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    /* Subtle underline effect */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+a:hover {
+    color: #5AC8FA;
+    /* Lighter blue on hover */
+    border-bottom-color: #5AC8FA;
+    /* Highlight underline on hover */
+}
+
+a:active {
+    color: #3A7BD5;
+    /* Slightly darker blue on click */
+}
+
+a:visited {
+    color: #4A90E2;
+    /* Slightly muted blue for visited links */
+}
+
+h1 {
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 3.2em;
+    line-height: 1.1;
+
+}
+
+h2 {
+    align-items: center;
+    background-color: var(--h2-background);
+    border-radius: 2px;
+    color: var(--h2-main);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13px;
+    margin-top: 26px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.input-section h2 {
+    background-color: #474749;
+}
+
+textarea,
+input {
+    background-color: var(--input-background);
+    border-color: var(--input-border);
+    color: var(--input-text);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 10px;
+    transition: border .25s, box-shadow .25s;
+    height: 45px;
+    max-width: 97%;
+    min-height: 45px;
+
+}
+
+.personal-info {
+    background-color: #F5A623;
+    /* Bright orange-yellow */
+    color: #1C1C1E;
+    /* Dark text for contrast */
+    text-align: center;
+
+
+    padding: 36px 24px;
+    width: 100%;
+}
+
+.personal-info .bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.bottom-row svg {
+    margin-right: 4px;
+    margin-left: 8px;
+}
+
+button {
+    background-color: #4A90E2;
+    /* Vibrant blue */
+    color: #FFFFFF;
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #5AC8FA;
+    /* Lighter blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+button:active {
+    background-color: #3A7BD5;
+    /* Slightly darker blue on click */
+    transform: scale(0.98);
+    /* Slightly shrink on click */
+}
+
+.remove-button {
+    background-color: #fa5f46;
+    width: 50%;
+}
+.remove-button:hover{
+    background-color: #ff8673;
+}
+.remove-button:active{
+    background-color: #ff5338;
+}
+.dates{
+    color: var(--subtle-text);
+}
